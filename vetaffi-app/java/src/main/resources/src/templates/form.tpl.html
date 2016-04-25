@@ -2,9 +2,6 @@
     <div class="floating-progress">
         <div ng-repeat="vaForm in vaForms">
             <div class="form-row row">
-                <!--<div class="col-lg-4">-->
-                    <!--<span class="pull-right">{{vaForm}}</span>-->
-                <!--</div>-->
                 <span class="form-name">Form {{vaForm}}</span>
                 <div class="progress-number col-lg-6">
                     <uib-progressbar
@@ -26,7 +23,7 @@
           sf-form="form"
           sf-model="model"
           ></form>
-    <button ng-submit="onSubmit(myForm)" class="btn btn-info">Submit</button>
+    <button ng-click="onSubmit(myForm)" class="btn btn-info">Submit</button>
     {{submitClaim}}
     <div class="submit-overlay" ng-show="submitClaim">
         <div class="submit-loading-modal">
